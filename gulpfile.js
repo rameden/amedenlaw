@@ -16,10 +16,11 @@ var getTask = function(task) {
 
 //clean
 gulp.task('clean', getTask('del'));
-// Copy
-gulp.task('copy', getTask('copy'));
+
 // Styles
 gulp.task('styles', getTask('styles'));
+// Fonts
+gulp.task('fonts', getTask('fonts'));
 // Scripts
 gulp.task('scripts', getTask('scripts'));
 //templates
@@ -36,9 +37,9 @@ gulp.task('deploy', getTask('deploy'));
 
 // Bundled Tasks
 gulp.task('default', [
-  'copy',
   'styles',
   'scripts',
+  'fonts',
   'templates',
   'media',
   'svg',

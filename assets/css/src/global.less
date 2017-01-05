@@ -1,0 +1,189 @@
+//AmedenLaw Variables
+@global-color                     : #4D4E5B;
+@global-muted-color               : lighten(@global-color, 25);
+@global-text-shadow               : #fff;
+
+@global-link-color                : @global-primary-background;
+@global-link-hover-color          : darken(@global-primary-background, 10);
+
+@global-contrast-color            : #fff;
+@global-contrast-text-shadow      : rgba(0,0,0,0.1);
+
+@global-font-size                 : 16px;
+@global-line-height               : 1.5;
+
+//
+// Backgrounds & Borders
+//
+
+@global-background                : #fff;
+@global-border                    : #BDBFC3;
+
+@global-border-radius             : 3px;
+
+@global-default-background        : #E9E9ED;
+@global-default-hover-background  : darken(@global-default-background, 5%);
+@global-default-active-background : darken(@global-default-background, 10%);
+
+@global-primary-background        : #344055;
+@global-primary-hover-background  : darken(@global-primary-background, 5%);
+@global-primary-active-background : darken(@global-primary-background, 10%);
+
+@global-secondary-background        : #1A7ABE;
+@global-secondary-hover-background  : darken(@global-secondary-background, 5%);
+@global-secondary-active-background : darken(@global-secondary-background, 10%);
+
+//
+// Spacings
+//
+
+@global-padding                    : 15px;
+@global-small-padding              : 5px;
+@global-medium-padding             : 20px;
+@global-large-padding              : 30px;
+@global-xlarge-padding             : 40px;
+@global-xxlarge-padding            : 50px;
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600|Quattrocento:400,700');
+
+html{
+    font: 400 16px/1.5 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6,
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6{
+  font-family: 'Quattrocento', sans-serif;
+}
+.uk-h2, h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.uk-button {
+    color: @global-contrast-color;
+    padding: 0px 15px;
+    background: @global-secondary-background;
+    border: none;
+    border-radius: 0;
+    text-shadow: none;
+}
+.uk-navbar-nav>li>a {
+    font-family: 'Quattrocento', serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color:@global-muted-color ;
+    height: 51px;
+    line-height: 50px;
+    border: none;
+    padding:3px 15px;
+}
+.uk-navbar-nav>li.uk-open>a,
+.uk-navbar-nav>li:hover>a,
+.uk-navbar-nav>li>a:focus{
+  border:none;
+  background:transparent;
+  color:@global-color;
+}
+.al-navbar{
+  padding:@global-padding;
+  background:@global-contrast-color;
+  border:none;
+}
+.al-contact{
+  background:@global-color;
+  line-height:@global-xxlarge-padding;
+}
+.sticky .al-contact{
+  line-height:@global-xlarge-padding;
+}
+.al-contact .uk-container{
+  padding:none;
+}
+.al-contact a{
+  color:@global-contrast-color;
+  padding:15px 20px;
+  background-color:@global-secondary-background;
+}
+.sticky .al-contact a{
+  padding:10px 20px;
+}
+.uk-navbar-brand{
+  height:inherit;
+}
+.al-bg-img{
+  background-image:url("../media/al-bg-1.jpg");
+  background-size: cover;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  visibility: inherit;
+  z-index: 20;
+}
+
+#al-hero h1,
+#al-hero h3,{
+  color:@global-contrast-color;
+  font-family: 'Quattrocento', serif;
+}
+//Form
+#formBlock{
+  margin: 25px 0;
+  padding: 25px 25px 25px 25px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+legend{
+  color:@global-contrast-color;
+}
+#form{
+border-radius:2px;
+padding:20px 30px;
+box-shadow:0 0 15px;
+font-size:14px;
+font-weight:bold;
+width:350px;
+margin:20px 250px 0 35px;
+float:left;
+
+}
+
+input{
+width:100%;
+height:35px;
+margin-top:5px;
+border:1px solid #999;
+border-radius:3px;
+padding:5px;
+}
+
+textarea{
+width:100%;
+height:80px;
+margin-top:5px;
+border-radius:3px;
+padding:5px;
+resize:none;
+}
+
+
+#al-hero .uk-vertical-align-middle{
+  padding:@global-large-padding;
+}
+
+section#al-intro{
+  margin:@global-xxlarge-padding 0px;
+}
+@media (min-width: 960px) {
+  #al-hero .uk-vertical-align{
+    height:500px;
+  }
+  #al-hero .uk-vertical-align-middle{
+    padding:0 @global-large-padding 0 0;
+  }
+  #formBlock{
+    margin: 75px 0;
+  }
+}
