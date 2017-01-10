@@ -98,8 +98,9 @@ h1, h2, h3, h4, h5, h6,
   border:none;
 }
 .al-contact{
-  background:@global-color;
+  background:@global-secondary-background;
   line-height:@global-xxlarge-padding;
+  transition: all 0.4s ease 0s;
 }
 .al-contact a:hover{
   text-decoration: none;
@@ -119,7 +120,12 @@ h1, h2, h3, h4, h5, h6,
   line-height:@global-xlarge-padding;
 }
 .al-contact .uk-container{
-  padding:none;
+  padding:0;
+}
+.al-contact .uk-container span.uk-float-right{
+  width:100%;
+  text-align: center;
+  transition: all 0.4s ease 0s;
 }
 .al-contact a{
   color:@global-contrast-color;
@@ -217,6 +223,10 @@ section#al-intro{
 .uk-tab>li>a{
   border:none;
 }
+#al-about{
+  background: #E9E9ED;
+  padding: @global-large-padding 0px;
+}
 #al-services li{
   padding:5px 0px;
 }
@@ -240,6 +250,9 @@ section#al-intro{
   text-decoration: none;
   border-bottom:3px solid @global-secondary-hover-background;
 }
+#ga-about .uk-text-right{
+  text-align: center !important;
+}
 @media (min-width: 960px) {
   #al-hero .uk-vertical-align{
     height:500px;
@@ -249,5 +262,15 @@ section#al-intro{
   }
   #formBlock{
     margin: 75px 0;
+  }
+  .al-contact .uk-container span.uk-float-right{
+    width: inherit;
+    text-align: right;
+  }
+  .al-contact {
+    background: @global-color;
+  }
+  #ga-about .uk-text-right{
+    text-align: right !important;
   }
 }
