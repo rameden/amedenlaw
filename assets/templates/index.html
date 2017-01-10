@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="assets/css/app.min.css">
   </head>
   <body>
-    <header data-uk-sticky="{clsactive:'sticky uk-animation-1', top:-350, animation: 'uk-animation-slide-top'}">
-      <div class="al-contact">
-        <div class="uk-container uk-text-right">
-        <a class="uk-h5" href="tel:8023623700">Call us Today: 802.362.3700</a>
+    <header>
+      <div class="al-contact" data-uk-sticky="{clsactive:'sticky uk-animation-1', top:-350, animation: 'uk-animation-slide-top'}">
+        <div class="uk-container">
+          <span id="top-logo" class="uk-float-left"><img class="uk-margin uk-margin-remove" src="assets/media/al-logo.svg" width="50" height="30" title="AmedenLaw" alt="AmedenLaw" data-pin-nopin="true"></span>
+          <span class="uk-float-right"><a class="uk-h5" href="tel:8023623700">Call us Today: 802.362.3700</a></span>
         </div>
       </div>
       <nav class="al-navbar uk-navbar uk-navbar-attached">
@@ -70,21 +71,91 @@
               <h4 class="uk-text-muted uk-margin-remove">.Experience .Reliability .Ethics</h4>
             </span>
               <p>The Law Office of Gary Ameden concentrates in Vermont real estate law. Offering comprehensive advice on buying, selling and refinancing Vermont condominiums, homes and businesses.&nbsp;Gary Ameden’s&nbsp;practice also includes &nbsp;legal advice for small business entities, wills, powers of attorney and probate estates.</p>
-            <hr class="uk-margin-large-top">
           </div>
     </section>
 
-    <section id="al-about">
-      <div class="uk-container">
-          <h2 class="uk-margin-bottom-remove">About Ameden Law</h2>
-          <h4 class="uk-text-muted uk-margin-remove">.est 2000</h4>
-          <p>Gary Ameden started practicing law in 1987 with Edgar T. Campbell in Manchester, VT. He was later a partner in the firm Winburn Kennedy and Ameden (which became Winburn and Ameden). Gary began a solo practice in 2000 at the current location of 4732 Main Street, Manchester Center, VT. After a varied practice that included criminal law, general litigation, planning and zoning, estate work and real estate he now focuses his practice on real estate law. Gary Served on the Vermont Bar Association Title Standards committee for many years and is on the Board of Directors of Vermont Attorney Title Insurance Court.</p>
-        <hr class="uk-margin-large-top uk-margin-large-bottom">
-      </div>
+    <section id="al-services" class="uk-margin-large-bottom">
+      <div class="uk-width-medium-1-1">
+        <h2 class="uk-margin-large-bottom uk-text-center">Areas of Practice</h2>
+        <div class="uk-tab-center">
+                                          <ul class="uk-tab" data-uk-tab="{connect:'#tab-content'}">
+                                              <li class="uk-active" aria-expanded="true" style="padding:0;"><a href="#">Buyer</a></li>
+                                              <li aria-expanded="false" style="padding:0;"><a href="#">Seller</a></li>
+                                              <li aria-expanded="false" style="padding:0;"><a href="#">Title Insurance</a></li>
+                                          </ul>
+                                        </div>
+                                        <div class="uk-container uk-margin-medium-top">
+                                          <ul id="tab-content" class="uk-switcher uk-margin">
+                                              <li class="uk-active" aria-hidden="false">
+                                                    <h2>Buyer Services</h2>
+                                                    <p>I will represent your interest as the purchaser. I view my role in your purchase as that of an advisor and counselor. If you have any questions about the transaction, at any time, you are encouraged to contact me.</p>
+                                                    <h3>My primary functions will be:</h3>
+                                                    <ul class="uk-list uk-list-space">
+                                                      <div class="uk-grid">
+                                                      <div class="uk-width-1-3">
+                                                        <li>Review the purchase and sale agreement</li>
+                                                        <li>Review the commitment letter from the lender</li>
+                                                        <li>Review the Warranty Deed from the seller’s Attorney</li>
+                                                        <li>Review the property transfer tax return</li>
+                                                      </div>
+                                                      <div class="uk-width-1-3">
+                                                        <li>Conduct the title search</li>
+                                                        <li>Determine if State and Local Permits are required</li>
+                                                        <li>Prepare the title insurance commitment</li>
+                                                        <li>Work to resolve any title problems</li>
+                                                      </div>
+                                                      <div class="uk-width-1-3">
+                                                        <li>Attend the closing</li>
+                                                        <li>Record your deed and other documents</li>
+                                                        <li>Issue the title insurance policies</li>
+                                                      </div>
+                                                      </div>
+                                                    </ul>
+
+                                              </li>
+                                              <li class="uk-active" aria-hidden="true">
+                                                <h2>Seller Services</h2>
+                                                <p>If you are the seller of real estate I can represent your interest in the sale of the property. I view my role in your closing as that of an advisor and counselor. If you have any questions at any time you are encouraged to contact me. I will review the purchase and sale agreement to determine what legal documents are required to close the transaction. I will prepare the documents you must bring to the closing and work with the buyer’s attorney if there are questions or concerns about your title or the transaction.</p>
+                                                <h3>Typical legal matters you must be concerned with as the seller are:</h3>
+                                                <ul class="uk-list uk-list-space">
+                                                  <div class="uk-grid">
+                                                    <div class="uk-width-1-3">
+                                                      <li>Deed</li>
+                                                      <li>Tax Returns</li>
+                                                      <li>Smoke/CO Detector Certs</li>
+                                                      <li>Mortgage Payoff</li>
+                                                      <li>Closing Adjustments</li>
+                                                    </div>
+                                                    <div class="uk-width-1-3">
+                                                      <li>Permits</li>
+                                                      <li>Vermont Capital Gains Tax</li>
+                                                      <li>Vermont Land Gains Tax</li>
+                                                      <li>Title insurance</li>
+                                                    </div>
+                                                  </div>
+                                                </ul>
+                                              </li>
+                                              <li class="uk-active" aria-hidden="true">
+                                                <h2>Title Insurance</h2>
+                                                <p>This type of insurance protects against problems in the title to your property. It focuses on the past, not the future. Title insurance insures that your interest in the property will be secure as of the time that interest was acquired. For example, in the case of an owner policy, you are insured as of the time of purchase of the property. A mortgagee policy insures the lender as of the time the mortgage is recorded. Because the insurance covers against loss by reason of the existence of a title problem at a particular time, there is only a single premium which is paid at closing.</p>
+                                                <p>I am licensed by the State of Vermont to sell title insurance. I am a member of the Board of Directors and  an agent for Vermont Attorneys Title Corporation. When issuing a title policy a portion of the premium is paid to the title company and a portion is paid to me as the agent. I can issue both a mortgage policy and an owner policy for your transaction. I also deal directly with your lender in issuing title insurance if required.</p>
+                                              </li>
+                                          </ul>
+                                        </div>
+                                      </div>
+
     </section>
 
     <section id="al-about">
-      <div class="uk-container">
+      <div class="uk-container uk-margin-large-bottom uk-margin-large-top">
+          <h2 class="uk-margin-bottom-remove">About Ameden Law</h2>
+          <h4 class="uk-text-muted uk-margin-remove">.est 2000</h4>
+          <p>Gary Ameden started practicing law in 1987 with Edgar T. Campbell in Manchester, VT. He was later a partner in the firm Winburn Kennedy and Ameden (which became Winburn and Ameden). Gary began a solo practice in 2000 at the current location of 4732 Main Street, Manchester Center, VT. After a varied practice that included criminal law, general litigation, planning and zoning, estate work and real estate he now focuses his practice on real estate law. Gary Served on the Vermont Bar Association Title Standards committee for many years and is on the Board of Directors of Vermont Attorney Title Insurance Court.</p>
+      </div>
+    </section>
+
+    <section id="ga-about">
+      <div class="uk-container uk-margin-large-bottom">
         <div class="uk-grid">
           <div class="uk-width-1-1 uk-width-large-4-5">
             <h2 class="uk-margin-bottom-remove">About Gary Ameden</h2>
@@ -98,7 +169,36 @@
         </div>
       </div>
     </section>
-
+    <section id="al-footer">
+      <footer>
+        <div class="uk-container">
+            <div class="uk-grid">
+              <div class="uk-width-1-1 uk-width-large-1-3">
+                <h4>Mailing Address:</h4>
+                <ul class="uk-list uk-list-space">
+                  <li>PO Box 500</li>
+                  <li>Manchester, Vermont 05254</li>
+                </ul>
+              </div>
+              <div class="uk-width-1-1 uk-width-large-1-3">
+                <h4>Street Location:</h4>
+                <ul class="uk-list uk-list-space">
+                  <li>4732 Main Street</li>
+                  <li>Manchester, Vermont 05255</li>
+                </ul>
+              </div>
+              <div class="uk-width-1-1 uk-width-large-1-3">
+                <h4>Contact Information:</h4>
+                <ul class="uk-list uk-list-space">
+                  <li>Email: <a href="mailto:gary@amedenlaw.com">Gary@amedenlaw.com</a></li>
+                  <li>Phone: <a href="tel:8023623700">802.362.3700</a></li>
+                  <li>Facsimile: <a href="tel:8023625554">802.362.5554</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </footer>
+    </section>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
     <script>window.jQuery || document.write('<script src="/assets/js/build/vendor/jquery.min.js"><\/script>')</script>
     <script src="assets/js/deps.min.js"></script>

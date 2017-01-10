@@ -59,6 +59,9 @@ h1, h2, h3, h4, h5, h6,
     line-height: 40px;
     font-weight: 600;
 }
+.uk-h3, h3{
+  font-weight: 600;
+}
 .uk-button {
     color: @global-contrast-color;
     padding: 0px 15px;
@@ -66,6 +69,10 @@ h1, h2, h3, h4, h5, h6,
     border: none;
     border-radius: 0;
     text-shadow: none;
+    transition: all 0.4s ease 0s;
+}
+.uk-margin-medium-top{
+  margin-top:@global-large-padding;
 }
 .uk-navbar-nav>li>a {
     font-family: 'Quattrocento', serif;
@@ -94,6 +101,20 @@ h1, h2, h3, h4, h5, h6,
   background:@global-color;
   line-height:@global-xxlarge-padding;
 }
+.al-contact a:hover{
+  text-decoration: none;
+  background-color:@global-secondary-hover-background;
+}
+.al-contact #top-logo{
+  display:none;
+}
+.al-contact.sticky #top-logo{
+  display:block;
+}
+.sticky{
+  z-index: 9999;
+  box-shadow: 0 2px 4px 0 rgba(216, 216, 216, 0.5);
+}
 .sticky .al-contact{
   line-height:@global-xlarge-padding;
 }
@@ -104,6 +125,7 @@ h1, h2, h3, h4, h5, h6,
   color:@global-contrast-color;
   padding:15px 20px;
   background-color:@global-secondary-background;
+  transition: all 0.4s ease 0s;
 }
 .sticky .al-contact a{
   padding:10px 20px;
@@ -175,6 +197,48 @@ resize:none;
 
 section#al-intro{
   margin:@global-xxlarge-padding 0px;
+}
+
+.uk-tab>li.uk-active>a{
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:2px solid @global-secondary-background;
+}
+.uk-tab>li.uk-open>a,
+.uk-tab>li>a:focus,
+.uk-tab>li>a:hover {
+  border-top:none;
+  border-left:none;
+  border-right:none;
+  border-bottom:2px solid @global-secondary-background;
+  background:transparent;
+}
+.uk-tab>li>a{
+  border:none;
+}
+#al-services li{
+  padding:5px 0px;
+}
+#al-footer{
+  background:@global-color;
+  padding:@global-large-padding 0;
+}
+#al-footer h4{
+  font-weight: 600;
+}
+#al-footer h4,
+#al-footer ul li{
+  color:@global-contrast-color;
+}
+#al-footer a{
+  color:@global-contrast-color;
+  border-bottom:3px solid @global-secondary-background;
+  padding-bottom:1px;
+}
+#al-footer a:hover{
+  text-decoration: none;
+  border-bottom:3px solid @global-secondary-hover-background;
 }
 @media (min-width: 960px) {
   #al-hero .uk-vertical-align{
