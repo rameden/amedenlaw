@@ -170,10 +170,10 @@ h1, h2, h3, h4, h5, h6,
 #formBlock{
   margin: 25px 0;
   padding: 25px 25px 25px 25px;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
 }
-
+#cover-bg{
+    background-color: rgba(0, 0, 0, 0.4);
+}
 legend{
   color:@global-contrast-color;
 }
@@ -264,6 +264,9 @@ section#al-intro{
 #ga-about .uk-text-right{
   text-align: center !important;
 }
+#al-copyright{
+  padding:5px 0px;
+}
 @media (min-width: 960px) {
   #al-hero .uk-vertical-align{
     height:500px;
@@ -272,7 +275,8 @@ section#al-intro{
     padding:0 @global-large-padding 0 0;
   }
   #formBlock{
-    margin: 75px 0;
+    padding: 100px 25px;
+    margin: 0;
   }
   .al-contact .uk-container span.uk-float-right{
     width: inherit;

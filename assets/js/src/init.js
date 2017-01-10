@@ -16,7 +16,7 @@ $(document).ready(function() {
 
         //send to formspree
         $.ajax({
-            url:'https://formspree.io/ryley@ameden.me',
+            url:'https://formspree.io/gary@amedenlaw.com',
             method:'POST',
             data:{
                 name:name,
