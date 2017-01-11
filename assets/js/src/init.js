@@ -24,13 +24,15 @@ $(document).ready(function() {
                  email:email,
                  phone:phone,
                 message:message,
-                _subject:'My Form Submission',
+                _subject:'Amedenlaw.com Form Submission',
             },
             dataType:"json",
             success:function() {
                 console.log('success');
                 $('#legend').hide();
+                $('.uk-button-send').hide();
                 $('#success-message').show();
+                $('.uk-button-sent').show();
             }
 
         });
