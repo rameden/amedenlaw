@@ -20,11 +20,11 @@ $(document).ready(function() {
             method:'POST',
             data:{
                 name:name,
-                _replyto:email,
-                 email:email,
-                 phone:phone,
+                email:email,
+                phone:phone,
                 message:message,
                 _subject:'Amedenlaw.com Form Submission',
+                _replyto:email,
             },
             dataType:"json",
             success:function() {
